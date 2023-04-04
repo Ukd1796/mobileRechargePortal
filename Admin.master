@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            font-family: Algerian;
+            font-size: xx-large;
+            color: #00FF00;
+            text-decoration: underline;
+            font-weight: bold;
+            float: left;
+            position: relative;
+            left: 156px;
+            top: 0px;
+        }
+        .style2
+        {
+            text-align: center;
+            width: 1141px;
+            height: 132px;
+        }
+        .style3
+        {
+            font-weight: bold;
+            font-size: x-large;
+            font-family: Algerian;
+            position: relative;
+            left: 67px;
+            top: 19px;
+            width: 964px;
+        }
+    </style>
+</head>
+<body background="ad.jpg">
+    <form id="form1" runat="server">
+    <div class="style2">
+        <span lang="en-us">
+        <asp:Label ID="Label1" runat="server" BorderColor="White" CssClass="style1" ForeColor="Lime" Height="36px" 
+            Text="E-RECHARGE" Width="773px"></asp:Label>
+        </span>
+        <br />
+        <asp:Menu ID="Menu1" runat="server" BorderColor="White" BorderStyle="Double" 
+            CssClass="style3" ForeColor="Lime" Height="28px" Orientation="Horizontal">
+            <Items>
+                <asp:MenuItem Text="HOME|" Value="HOME" NavigateUrl="~/Adminhome.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="SIM REGISTRATION|" Value="SIM REGISTRATION" NavigateUrl="~/Simregistration.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="USER DETAIL|" Value="USER DETAIL" NavigateUrl="~/Userdetails.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="COMPLAINTS|" Value="COMPLAINTS" NavigateUrl="~/AdminComplaints.aspx">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Offers.aspx" Text="OFFERS|" Value="LOGOUT"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Login.aspx" Text="LOGOUT" Value="LOGOUT"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <span lang="en-us">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                <br />
+            </p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

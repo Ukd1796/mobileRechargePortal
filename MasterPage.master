@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style4
+        {
+            font-weight: bold;
+            font-size: xx-large;
+            font-family: Algerian;
+            color: #0000FF;
+            text-decoration: underline;
+            position: relative;
+            left: 1px;
+            top: -2px;
+            width: 1251px;
+        }
+        .style8
+        {
+            height: 142px;
+            width: 1247px;
+            margin-top: 0px;
+            margin-bottom: 3px;
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
+        .style9
+        {
+            text-align: center;
+            width: 1260px;
+            height: 920px;
+        }
+        .style11
+        {
+            text-align: center;
+        }
+        .style12
+        {
+            height: 51px;
+        }
+        .style13
+        {
+            font-family: Algerian;
+            font-size: x-large;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            width: 1108px;
+        }
+    </style>
+</head>
+<body background="bg.jpg">
+    <form id="form1" runat="server">
+    <div style="border: thin double #3366FF" title="ONLINE MOBILE RECHARGE" 
+        class="style9">
+        <div>
+            <span lang="en-us">
+            <asp:Label ID="Label1" runat="server" BorderColor="#3333CC" 
+                BorderStyle="Double" CssClass="style4" Font-Size="XX-Large" ForeColor="Blue" 
+                Height="49px" Text="E-RECHARGE"></asp:Label>
+        </span>
+        </div>
+        <div class="style8">
+            <asp:Image ID="Image4" runat="server" Height="162px" ImageUrl="~/m1.JPG" Width="248px" />
+            <asp:Image ID="Image2" runat="server" Height="126px" ImageUrl="~/d.jpg" Width="234px" />
+            <asp:Image ID="Image3" runat="server" Height="164px" ImageUrl="~/a.jpg" Width="213px" />
+            <asp:Image ID="Image5" runat="server" Height="166px" ImageUrl="~/m2.jpg" Width="120px" />
+        </div>
+        <span lang="en-us">
+        <br />
+        <div class="style12">
+       
+            <asp:Menu ID="Menu1" runat="server" BorderStyle="Outset" CssClass="style13" Orientation="Horizontal">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/userhome.aspx" Text="HOME" Value="HOME"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Urecharge.aspx" Text="RECHARGE" Value="RECHARGE"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Ucomplaints.aspx" Text="COMPLAINTS" Value="COMPLAINTS"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Login.aspx" Text="LOGOUT" Value="LOGOUT"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+            
+        </div>
+                 <div class="style11">
+        <span lang="en-us">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                <br />
+            </p>
+        
+        </asp:ContentPlaceHolder>
+        </span>
+            </div>
+      
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </span>
+    </div>
+    </form>
+</body>
+</html>
